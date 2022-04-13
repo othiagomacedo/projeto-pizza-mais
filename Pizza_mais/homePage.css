@@ -1,0 +1,18 @@
+.size{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body{
+    background-image: url('pizzaBack.jpg');
+    height: 500px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pd{
+    padding: 100px;
+}
