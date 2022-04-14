@@ -4,15 +4,17 @@
 }
 
 body{
-    background-image: url('pizzaBack.jpg');
+    background-image: url('Fundo-do-Site-opaco.png');
     height: 500px;
     margin-bottom: 50px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /*backdrop-filter: blur(10px);*/
 }
 
 .pd{
     padding: 100px;
 }
+
