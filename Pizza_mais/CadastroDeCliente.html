@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,8 @@
     <title>Cadastro de Cliente</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top pd-2 container">
         <div class="container-fluid">
@@ -25,13 +25,13 @@
                 <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Cardápio</a>
+                <a class="nav-link text-dark" href="CadastroDeCliente.html">Cardápio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Acompanhar Pedido</a>
+                <a class="nav-link text-dark" href="CadastroDeCliente.html">Acompanhar Pedido</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-dark" href="homePage.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Conta
                 </a>
                 <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
@@ -45,56 +45,114 @@
           </div>
         </div>
       </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <form class="row g-3 container-fluid">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Rua, Avenida...">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Complemento</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento, Quadra, Lote...">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Estado</label>
-          <select id="inputState" class="form-select">
-            <option selected>Escolha</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">CEP</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Lembrar de mim
-            </label>
+<br><br><br><br><br>
+
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col container-fluid" style="border-radius: 5px;">
+            <br><br>
+            <hr>
+            
+            <div class="text-center">
+                <h2>Cadastrar-se</h2>
+                <br>
+            </div>
+            <form class="row g-3 container-fluid">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nome Completo</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">CPF</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Telefone</label>
+                  <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="">
+                  </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Senha</label>
+                  <input type="password" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Endereco</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Rua, Avenida, Quadra, Lote, ...">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Cidade</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Salvar Como</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Escolha</option>
+                    <option>Trabalho</option>
+                    <option>Casa</option>
+                    <option>Faculdade</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">CEP</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Aceito os Termos
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                </div>
+                
+              </form>
+          </div>
+         
+          <div class="col m-5">
+              <hr>
+              <div class="text-center">
+                  <h2>Login</h2>
+              </div>
+              <br>
+            <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Salvar Login
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </form>
           </div>
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Inscrever-se</button>
-        </div>
-      </form>
-      <br><br><br><br>
-      
+      </div>
+
+      <br><br><br>
+
       <footer class="text-center text-lg-start bg-secondary text-muted" style="border-radius:5px;">
         <section
           class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
