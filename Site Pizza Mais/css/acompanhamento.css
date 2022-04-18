@@ -1,0 +1,105 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navegar img {
+    height: 50px;
+    width: 50px;
+}
+
+.pagina {
+    padding-left: 17%;
+    padding-right: 17%;
+    margin-top: 7%;
+}
+
+.title-page h1 {
+    color: #ff3d27;
+    font-weight: 700;
+    text-align: center;
+}
+
+.estimativa {
+    text-align: center;
+}
+
+.displayTimer {  /*UL DO HTML*/
+    display: flex;
+    flex-wrap: nowrap;    
+    list-style: none;
+    align-items: center;
+}
+
+.timerbarra {
+    
+    display: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tempo {
+    background-color: rgb(134, 199, 156);
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.tempo:hover {
+    background-color: rgb(4, 172, 4);
+}
+
+
+.statusPedido {
+    display: flex;
+    list-style: none;
+    background-color: #f7f7f7;
+    padding: 13px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.relatoPedidoAtual {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px solid #27ff3960;
+}
+
+.relatoPedidoAtual:hover {
+    border: 3px solid #27ff3960;
+    transition: 0.3s;
+}
+
+.relatoPedidoAtual h5 {
+    color: rgb(4, 172, 4);
+    font-weight: 700;
+}
+
+.titleDetalhes h2 {
+    color: #ff3d27;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.detalhesPedido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:360) {
+    .displayTimer {
+        flex-wrap: nowrap;
+    }
+}
+
+.tempo {
+    list-style: none;
+    color: #ffe500;    
+}

@@ -1,0 +1,84 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 5rem;
+}
+
+.titlepage {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.titlepage h1 {
+    color: red;
+    font-weight: 700;
+}
+
+
+.avaliacao { /*UL DO HTML*/
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    font-size: 5vh;
+}
+
+.stars {
+    display:relative;   
+}
+
+.botao-co {
+    display: flex;
+    margin-top: 10px;
+}
+
+#irCO {
+    padding: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-weight: 700;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+#irCO:hover {
+    background-color: rgb(190, 2, 2);
+    transition: 0.2s;
+}
+
+@media screen and (max-width:360) {
+    .avaliacao {
+        flex-wrap: nowrap;
+    }
+}
+
+.star-icon {
+    list-style: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #ffe500;
+    
+}
+
+.star-icon::before {
+    content: "\2605";
+}
+
+.star-icon.ativo ~ .star-icon::before {
+    content: "\2606";
+}
+
+.avaliacao:hover .star-icon::before {
+    content: "\2605";
+}
+
+.star-icon:hover ~ .star-icon::before {
+    content: "\2606"
+}
